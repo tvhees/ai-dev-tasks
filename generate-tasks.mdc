@@ -1,6 +1,6 @@
 ---
-description: 
-globs: 
+description:
+globs:
 alwaysApply: false
 ---
 # Rule: Generating a Task List from a PRD
@@ -55,6 +55,9 @@ The generated task list _must_ follow this structure:
 - [ ] 3.0 Parent Task Title (may not require sub-tasks if purely structural or configuration)
 ```
 
+**DO NOT** just copy the Notes section - use your judgement about what should be in there, and consider the project context (e.g. which package manager is being used)
+
+
 ## Interaction Model
 
 The process explicitly requires a pause after generating parent tasks to get user confirmation ("Go") before proceeding to generate the detailed sub-tasks. This ensures the high-level plan aligns with user expectations before diving into details.
@@ -62,3 +65,9 @@ The process explicitly requires a pause after generating parent tasks to get use
 ## Target Audience
 
 Assume the primary reader of the task list is a **junior developer** who will implement the feature.
+
+## Final instructions
+
+1. Do NOT start implementing the PRD
+2. Ask the user clarifying questions to ensure the final task list is correct
+3. Take the user's answers to the clarifying questions and improve the task list
